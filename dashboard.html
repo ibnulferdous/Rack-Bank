@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+
+    <!-- Tailwind CSS -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="mt-24">
+        <h1 class="text-6xl	font-light text-center">Welcome to <span class="font-extrabold text-indigo-500">Dashboard</span>
+        </h1>
+    </header>
+
+    <main class="w-4/5 mt-16 mx-auto grid grid-cols-3 gap-8">
+        <div class="bg-indigo-500 p-16 rounded-2xl text-white">
+            <h2 class="text-4xl">Deposite</h2>
+            <h3 class="font-bold text-5xl">$<span id="deposite-text">760</span></h3>
+        </div>
+        <div class="bg-indigo-500 p-16 rounded-2xl text-white">
+            <h2 class="text-4xl">Withdraw</h2>
+            <h3 class="font-bold text-5xl">$<span id="widthdraw-text">10</span></h3>
+        </div>
+        <div class="bg-indigo-500 p-16 rounded-2xl text-white">
+            <h2 class="text-4xl">Balance</h2>
+            <h3 class="font-bold text-5xl">$<span id="balance-text">750</span></h3>
+        </div>
+    </main>
+
+    <section class="w-4/5 mt-16 mx-auto grid grid-cols-2 gap-8">
+        <div class="bg-indigo-50 p-16 rounded-2xl">
+            <h2 class="text-2xl mb-8 text-center">Insert Deposite Amount</h2>
+            <input type="number" name="deposite" id="deposite-input" class="block mb-4 w-full p-1.5 rounded border border-indigo-300" placeholder="Deposite Amount">
+            <button type="submit" id="deposite-btn" class="block rounded bg-indigo-500 text-white font-bold py-3 px-10 text-xl">Deposite</button>
+        </div>
+        <div class="bg-indigo-50 p-16 rounded-2xl">
+            <h2 class="text-2xl mb-8 text-center">Insert Withdraw Amount</h2>
+            <input type="number" name="widthdraw" id="widthdraw-input" class="block mb-4 w-full p-1.5 rounded border border-indigo-300" placeholder="Widthdraw Amount">
+            <button type="submit" id="widthdraw-btn" class="block rounded bg-indigo-500 text-white font-bold py-3 px-10 text-xl">Widthdraw</button>
+        </div>
+    </section>
+
+
+
+    <script src="scripts/dashboard.js"></script>
+</body>
+</html>
